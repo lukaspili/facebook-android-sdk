@@ -27,7 +27,6 @@ import com.facebook.AccessToken;
 import com.facebook.FacebookCallback;
 import com.facebook.GraphRequest;
 import com.facebook.HttpMethod;
-import com.facebook.share.ShareApi;
 import com.facebook.share.Sharer;
 import com.facebook.share.model.SharePhoto;
 import com.facebook.share.model.SharePhotoContent;
@@ -72,7 +71,7 @@ public class PostsRequest {
                 .addPhoto(photo)
                 .build();
 
-        ShareApi.share(content, callback);
+//        ShareApi.share(content, callback);
     }
 
 }

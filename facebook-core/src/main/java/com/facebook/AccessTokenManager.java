@@ -27,7 +27,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
 import com.facebook.internal.Utility;
@@ -41,6 +40,8 @@ import java.util.HashSet;
 import java.util.Locale;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 final public class AccessTokenManager {
     public static final String TAG = "AccessTokenManager";

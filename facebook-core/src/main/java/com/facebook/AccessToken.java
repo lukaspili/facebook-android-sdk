@@ -25,7 +25,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
 
 import com.facebook.internal.Utility;
@@ -42,6 +41,8 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import androidx.annotation.Nullable;
 
 /**
  * This class represents an immutable access token for using Facebook APIs. It also includes

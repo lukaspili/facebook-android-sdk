@@ -28,7 +28,6 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.os.Bundle;
-import android.support.v7.content.res.AppCompatResources;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -56,6 +55,8 @@ import com.facebook.login.R;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
+import androidx.appcompat.content.res.AppCompatResources;
 
 /**
  * A Log In/Log Out button that maintains login state and logs in/out for the app.

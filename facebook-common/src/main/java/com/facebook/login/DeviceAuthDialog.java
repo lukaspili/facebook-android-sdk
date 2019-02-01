@@ -28,10 +28,6 @@ import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.LayoutRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.DialogFragment;
 import android.text.Html;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -50,8 +46,8 @@ import com.facebook.GraphRequest;
 import com.facebook.GraphRequestAsyncTask;
 import com.facebook.GraphResponse;
 import com.facebook.HttpMethod;
-import com.facebook.common.R;
 import com.facebook.appevents.AppEventsLogger;
+import com.facebook.common.R;
 import com.facebook.devicerequests.internal.DeviceRequestsHelper;
 import com.facebook.internal.AnalyticsEvents;
 import com.facebook.internal.FetchedAppSettingsManager;
@@ -67,6 +63,11 @@ import java.util.Locale;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import androidx.annotation.LayoutRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
 
 public class DeviceAuthDialog extends DialogFragment {
     private static final String DEVICE_LOGIN_ENDPOINT = "device/login";

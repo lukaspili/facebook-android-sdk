@@ -29,7 +29,7 @@ import android.content.pm.ResolveInfo;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -48,6 +48,8 @@ import java.util.Map;
 import java.util.TreeSet;
 import java.util.UUID;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import androidx.annotation.Nullable;
 
 /**
  * com.facebook.internal is solely for the use of other packages within the Facebook SDK for
@@ -1013,7 +1015,8 @@ public final class NativeProtocol {
         private ProtocolVersionQueryResult() {
         }
 
-        public @Nullable NativeAppInfo getAppInfo() {
+        public @Nullable
+        NativeAppInfo getAppInfo() {
             return nativeAppInfo;
         }
 

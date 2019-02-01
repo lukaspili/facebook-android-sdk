@@ -32,12 +32,11 @@ dependencies {
     api project(':facebook-core')
     api project(':facebook-common')
     // Support Dependencies
-    implementation "com.android.support:appcompat-v7:${project.ext.supportLibraryVersion}"
+    implementation "androidx.appcompat:appcompat:1.0.0-beta01"
 }
 
 android {
     compileSdkVersion project.ext.compileSdk
-    buildToolsVersion project.ext.buildTools
 
     defaultConfig {
         minSdkVersion project.ext.minSdk

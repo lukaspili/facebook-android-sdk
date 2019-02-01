@@ -25,13 +25,10 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Looper;
-import android.util.Log;
 
 import com.facebook.FacebookSdk;
 import com.facebook.core.BuildConfig;
 import com.facebook.internal.Utility;
-
-import junit.framework.Assert;
 
 import java.text.NumberFormat;
 import java.text.ParseException;
@@ -43,17 +40,17 @@ public class AppEventUtility {
 
     public static void assertIsNotMainThread() {
         if (BuildConfig.DEBUG) {
-            Assert.assertFalse(
-                    "Call cannot be made on the main thread",
-                    isMainThread());
+//            Assert.assertFalse(
+//                    "Call cannot be made on the main thread",
+//                    isMainThread());
         }
     }
 
     public static void assertIsMainThread() {
         if (BuildConfig.DEBUG) {
-            Assert.assertTrue(
-                    "Call must be made on the main thread",
-                    isMainThread());
+//            Assert.assertTrue(
+//                    "Call must be made on the main thread",
+//                    isMainThread());
         }
     }
 
